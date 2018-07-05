@@ -1,3 +1,4 @@
 cache.sqlite
 venv/*
 __pycache__/*
+settings.sh

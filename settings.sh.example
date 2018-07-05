@@ -1,0 +1,4 @@
+# export TRILLIAN_LOG_URL='https://<host>:<port>/v1beta1/logs/<log_id>'
+
+# export TRILLIAN_LOG_PUBLIC_KEY='<public key algo>:<hash algo>:<der encoded key>'
+# e.g. 'ECDSA:SHA256:MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEEHSBxcV5k/bDhUyRFQz3Od3HBRkoM2CeopokIb5Rn+RTSZDmmXfreeKWJ456WF+7TQkp4qmMNbEv1VzDjVmP4Q=='
