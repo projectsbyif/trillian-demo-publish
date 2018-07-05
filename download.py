@@ -4,9 +4,9 @@ import sys
 
 import utcdatetime
 
+from trillian import TrillianLog
 
 from traffic_counter_api import TrafficCounterAPI
-from trillian_log import TrillianLog
 
 
 def main(argv):
