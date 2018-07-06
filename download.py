@@ -1,3 +1,4 @@
+import datetime
 import logging
 import os
 import sys
@@ -15,8 +16,13 @@ def main(argv):
     traffic_counter_api = TrafficCounterAPI()
     trillian_log = TrillianLog(**load_log_settings())
 
-    most_recent_dt = trillian_log.latest().datetime
     now = utcdatetime.utcdatetime.now()
+
+    latest_log_entry = trillian_log.latest()
+    if latest_log_entry is not None:
+        most_recent_dt = latest_log_entry.datetime
+    else:
+        most_recent_dt = now - datetime.timedelta(hours=2)
 
     logging.info('Most recent timestamp in log: {}'.format(most_recent_dt))
 
