@@ -20,7 +20,9 @@ def main(argv):
 
     latest_log_entry = trillian_log.latest()
     if latest_log_entry is not None:
-        most_recent_dt = latest_log_entry.datetime
+        most_recent_dt = utcdatetime.utcdatetime.from_string(
+            latest_log_entry.json()['datetime']
+        )
     else:
         most_recent_dt = now - datetime.timedelta(hours=2)
 
