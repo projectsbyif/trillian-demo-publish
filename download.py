@@ -23,10 +23,11 @@ def main(argv):
         most_recent_dt = utcdatetime.utcdatetime.from_string(
             latest_log_entry.json()['datetime']
         )
+        logging.info('Most recent timestamp in log: {}'.format(most_recent_dt))
     else:
-        most_recent_dt = now - datetime.timedelta(hours=2)
+        most_recent_dt = now - datetime.timedelta(hours=12)
+        logging.info('Log looks empty, getting last 12 hours')
 
-    logging.info('Most recent timestamp in log: {}'.format(most_recent_dt))
 
     for row in traffic_counter_api.download(after=most_recent_dt, before=now):
         trillian_log.append(row)
