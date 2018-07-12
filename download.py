@@ -31,7 +31,7 @@ def main(argv):
         Print.tick('Most recent timestamp in log: {}'.format(most_recent_dt))
     else:
         most_recent_dt = now - datetime.timedelta(hours=12)
-        logging.info('Log looks empty, getting last 12 hours')
+        Print.bullet('Log looks empty, getting last 12 hours')
 
     Print.status('Downloading new traffic counts')
 
