@@ -1,6 +1,7 @@
 requests
 requests_cache
 utcdatetime
+termcolor
 
 # Install the api client from a local directory
 -e ../trillian-demo-python-api-client
