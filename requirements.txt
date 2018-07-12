@@ -1,6 +1,6 @@
 certifi==2018.4.16
 chardet==3.0.4
--e git+git@github.com:projectsbyif/trillian-demo-python-api-client.git@5ca7c7b1f1e7907bc2fdbbb31e27054204eeef1c#egg=trillian
+-e git+git@github.com:projectsbyif/trillian-demo-python-api-client.git@8aa2b963356881002e7679490a601dcbb587fc58#egg=trillian
 idna==2.7
 pycryptodome==3.6.3
 requests==2.19.1
