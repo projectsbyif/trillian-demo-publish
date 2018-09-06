@@ -4,7 +4,7 @@ utcdatetime
 termcolor
 
 # Install the api client from a local directory
--e ../trillian-demo-python-api-client
+# -e ../trillian-demo-python-api-client
 
 # Alternatively, install from Github (master)
-# -e git+ssh://git@github.com/projectsbyif/trillian-demo-python-api-client.git#egg=trillian
+-e git+ssh://git@github.com/projectsbyif/trillian-demo-python-api-client.git#egg=trillian
