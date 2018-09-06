@@ -2,3 +2,4 @@ cache.sqlite
 venv/*
 __pycache__/*
 settings.sh
+.DS_Store
