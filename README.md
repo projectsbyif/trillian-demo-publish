@@ -1,4 +1,4 @@
-# Trillian Demo Tools: Publish
+# Trillian Demo: Publish
 
 This demo downloads hourly vehicle counts for a fictional road.
 
