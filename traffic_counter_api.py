@@ -42,7 +42,9 @@ class TrafficCounterAPI():
         pass
 
     def download(self, after, before):
-        http = RequestsWrapper('data downloader bot@projectsbyif.com')
+        http = RequestsWrapper(
+            'https://github.com/projectsbyif/trillian-demo-publish'
+        )
         response = http.get(self.BASE_URL)
         response.raise_for_status()
 
