@@ -22,7 +22,6 @@ class TrillianLog():
             )
 
     def latest(self):
-        # TODO
         self.__url = base_url
         self.__public_key_algo = None
         self.__hash_algo = None
