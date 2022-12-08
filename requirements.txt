@@ -1,5 +1,5 @@
 -e git+ssh://git@github.com/projectsbyif/trillian-demo-python-api-client.git@581b981b61a91c2ae79309bca53292de733d23c4#egg=trillian
-certifi==2018.8.24
+certifi==2022.12.7
 chardet==3.0.4
 idna==2.7
 pycryptodome==3.6.6
